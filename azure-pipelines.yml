@@ -1,3 +1,11 @@
+schedules:
+- cron: '0 */6 * * *'
+  displayName: Build every 6 hours
+  branches:
+    include:
+    - TestApp
+  always: true
+
 trigger:
 - '*'
 
