@@ -7,9 +7,6 @@ schedules:
   always: true
   
 
-trigger:
-- '*'
-
 pool:
   vmImage: ubuntu-latest
 
