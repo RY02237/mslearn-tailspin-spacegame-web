@@ -1,11 +1,13 @@
 schedules:
-- cron: '0 */6 * * *'
-  displayName: Build every 6 hours
+- cron: '0 */2 * * *'
+  displayName: Build every 2 hours
   branches:
     include:
     - TestApp
   always: true
   
+trigger:
+- '*'
 
 pool:
   vmImage: ubuntu-latest
