@@ -6,8 +6,7 @@ schedules:
     - TestApp
   always: true
   
-trigger:
-- '*'
+trigger: none # Disable CI triggers.
 
 pool:
   vmImage: ubuntu-latest
